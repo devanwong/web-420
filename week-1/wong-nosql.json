@@ -1,0 +1,50 @@
+// one to many 
+// a USER can have many DEPENDENTS
+{ 
+    id: 1,
+    “firstName”: “Barbara”,
+    “lastName”: “Wong”,
+    “dependents”:
+        [ 
+            {“name”: “Devan”, "relationship": "daughter"},
+            {“name”: “Cassie”, "relationship": "daughter"},
+            {“name”: “Tiki”, "relationship": "dog"}
+        ]
+
+}
+
+//one to one 
+//a USER has one BIRTHDATE
+
+{ 
+    "id": 1,
+    “firstName”: “Devan”,
+    “lastName”: “Wong”,
+    “birthday”: 
+        [
+            "month": "November",
+            "date": 8,
+            "year": 1990
+        ]
+}
+
+//many to many
+//a USER has many ROLES
+
+//user
+{ 
+    "id": 1,
+    “firstName”: “Devan”,
+    “lastName”: “Wong”,
+}
+//roles
+{
+    "id": 99,
+    "userId": 1,
+    "roles":
+        [
+            {"roleName": "Project Manager"},
+            {"roleName": "Email Developer"}
+        ]
+}
+
