@@ -26,7 +26,9 @@ var apiCatalog = require('./routes/api-catalog');
 var app = express();
 //database connection 
 mongoose.connect('mongodb+srv://admin:admin@buwebdev-cluster-1.w20ui.mongodb.net/api-getaway', {
-  promiseLibrary: require('bluebird')
+  promiseLibrary: require('bluebird'),
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 }).then ( () => console.log('connection successful'))
 .catch ( (err) => console.log(err));
 
