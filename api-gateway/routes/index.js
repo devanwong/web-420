@@ -1,12 +1,3 @@
-/*
-============================================
-; Title:  API GETAWAY
-; Author: Devan Wong
-; Date:   8 November 2020
-; Description: Api getaway 
-;===========================================
-*/
-
 var express = require('express');
 var router = express.Router();
 
