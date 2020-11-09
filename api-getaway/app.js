@@ -1,6 +1,17 @@
+const header = require('../wong-header');
+console.log(header.display('Devan', 'Wong', 'API getaway'));
+/*
+============================================
+; Title:  API GETAWAY
+; Author: Devan Wong
+; Date:   8 November 2020
+; Description: Api getaway 
+;===========================================
+*/
+
 var express = require('express');
 var path = require('path');
-//var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -26,7 +37,7 @@ app.set('view engine', 'ejs');
 app.use('/', indexRouter);
 app.use('/api', apiCatalog);
 
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
