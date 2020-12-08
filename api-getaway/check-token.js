@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  API GETAWAY
+; Author: Devan Wong
+; Date:   7 December 2020
+; Description: Api getaway 
+;===========================================
+*/
+
+
 var jwt = require('jsonwebtoken');
 var config = require('./config');
 
