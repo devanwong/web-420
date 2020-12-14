@@ -6,7 +6,7 @@ var config = require('../config');
  */
 
 var app = require('../app');
-var debug = require('debug')('api-getaway:server');
+var debug = require('debug')('api-gateway-wk9:server');
 var http = require('http');
 
 /**

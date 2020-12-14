@@ -6,17 +6,16 @@
 ; Description: Api getaway 
 ;===========================================
 */
-
-
 var jwt = require('jsonwebtoken');
 var config = require('./config');
 
-// Check the HTTP header for a valid JSON web token 
-// @param req
-// @param res
-// @param next
+/**
+ * Check the HTTP header for a valid JSON web token
+ * @param req
+ * @param res
+ * @param next
+ */
 
-//if token is valid, verify token, assign ID to decode ID can call next
 function checkToken(req, res, next) {
 
     var token = req.headers['x-access-token'];

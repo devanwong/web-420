@@ -1,5 +1,5 @@
-const header = require('../wong-header');
-console.log(header.display('Devan', 'Wong', 'API getaway'));
+// const header = require('../wong-header');
+// console.log(header.display('Devan', 'Wong', 'API getaway'));
 /*
 ============================================
 ; Title:  API GETAWAY
